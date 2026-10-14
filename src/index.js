@@ -151,13 +151,11 @@ async function declareWinner(character1, character2) {
   console.log(`${character1.NOME}: ${character1.PONTOS} pontos`);
   console.log(`${character2.NOME}: ${character2.PONTOS} pontos`);
 
-  if (character1.PONTOS > character2.PONTOS) {
+  if (character1.PONTOS > character2.PONTOS)
     console.log(`\n ${character1.NOME} venceu a corrida! Parabéns! 🏆`);
-  } else if (character2.PONTOS > character1.PONTOS) {
+  else if (character2.PONTOS > character1.PONTOS)
     console.log(`\n ${character2.NOME} venceu a corrida! Parabéns! 🏆`);
-  } else {
-    console.log(`\n A corrida terminou empatada!`);
-  }
+  else console.log(`\n A corrida terminou empatada!`);
 }
 
 (async function main() {
